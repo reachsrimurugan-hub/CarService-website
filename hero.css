@@ -1,0 +1,232 @@
+/* ========================================================
+   Hero Section & Slider Module
+   ======================================================== */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider input[type="radio"] {
+    display: none;
+}
+
+.slides {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    /* 8s total cycle = 4 seconds per slide */
+    animation: autoSlide 8s infinite ease-in-out;
+}
+
+/* Keyframes for 4s per slide (8s total) */
+@keyframes autoSlide {
+
+    0%,
+    45% {
+        transform: translateX(0);
+    }
+
+    50%,
+    95% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-bg-1 {
+    background-image: url('images/slide1.png');
+}
+
+.slide-bg-2 {
+    background-image: url('images/slide2.png');
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.content h1 {
+    font-family: var(--font-heading);
+    font-size: 4.5rem;
+    text-align: left;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+.content p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    animation: fadeInUp 1.4s ease-out;
+}
+
+.btn {
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: var(--transition);
+    cursor: pointer;
+    font-family: var(--font-body);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Manual Navigation Control */
+.nav-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.arrow {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: var(--transition);
+    backdrop-filter: blur(5px);
+}
+
+.arrow:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+#slide-1:checked~.slides {
+    /* animation: none; Removed to allow auto-slide */
+    transform: translateX(0);
+}
+
+#slide-2:checked~.slides {
+    /* animation: none; Removed to allow auto-slide */
+    transform: translateX(-50%);
+}
+
+#slide-1:checked~.nav-arrows-1 {
+    display: flex;
+}
+
+#slide-1:checked~.nav-arrows-2 {
+    display: none;
+}
+
+#slide-2:checked~.nav-arrows-1 {
+    display: none;
+}
+
+#slide-2:checked~.nav-arrows-2 {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .slide-buttons {
+        flex-direction: column;
+    }
+
+    .arrow {
+        width: 45px;
+        height: 45px;
+    }
+}

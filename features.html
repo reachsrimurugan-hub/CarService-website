@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCare - Features</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="features.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <!-- Sticky Navigation -->
+    <header class="navbar" id="home">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Auto<span>Care</span></a>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <button class="search-btn" aria-label="Search">&#128269;</button>
+                <a href="contact.html" class="btn-book-now">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features" style="padding-top: 120px;">
+        <h2 class="section-title">Features</h2>
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><path d="M19.14,12.94C19.2,12.63 19.25,12.32 19.25,12C19.25,11.68 19.2,11.37 19.14,11.06L21.5,9.22C21.71,9.05 21.77,8.76 21.65,8.53L19.4,4.63C19.27,4.4 19,4.32 18.78,4.4L16,5.5C15.42,5.06 14.78,4.7 14.1,4.42L13.68,1.45C13.63,1.19 13.41,1 13.15,1H8.85C8.59,1 8.37,1.19 8.32,1.45L7.89,4.42C7.22,4.7 6.58,5.06 6,5.5L3.22,4.4C3,4.32 2.73,4.4 2.6,4.63L0.35,8.53C0.23,8.76 0.29,9.05 0.5,9.22L2.86,11.06C2.8,11.37 2.75,11.68 2.75,12C2.75,12.32 2.8,12.63 2.86,12.94L0.5,14.78C0.29,14.95 0.23,15.24 0.35,15.47L2.6,19.37C2.73,19.6 3,19.68 3.22,19.6L6,18.5C6.58,18.94 7.22,19.3 7.89,19.58L8.32,22.55C8.37,22.81 8.59,23 8.85,23H13.15C13.41,23 13.63,22.81 13.68,22.55L14.1,19.58C14.78,19.3 15.42,18.94 16,18.5L18.78,19.6C19,19.68 19.27,19.6 19.4,19.37L21.65,15.47C21.77,15.24 21.71,14.95 21.5,14.78L19.14,12.94M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5Z" /></svg>
+                </div>
+                <h3 class="feature-title">Quality Materials</h3>
+                <p class="feature-desc">Using best-in-class components and the finest materials ensures a long lifespan for your vehicle parts.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12,16A3,3 0 0,1 9,13C9,11.88 10.31,9.71 12,7C13.69,9.71 15,11.88 15,13A3,3 0 0,1 12,16M12,3C12,3 5,10.04 5,13A7,7 0 0,0 12,20A7,7 0 0,0 19,13C19,10.04 12,3 12,3Z" /></svg>
+                </div>
+                <h3 class="feature-title">Oil Change</h3>
+                <p class="feature-desc">Keep your engine running smoothly with our rapid, high-quality synthetic oil change services.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,19.93C7.06,19.43 4,16.05 4,12C4,7.95 7.06,4.57 11,4.07V19.93M13,4.07C16.94,4.57 20,7.95 20,12C20,16.05 16.94,19.43 13,19.93V4.07Z" /></svg>
+                </div>
+                <h3 class="feature-title">Tire Service</h3>
+                <p class="feature-desc">Professional tire balancing, alignment and replacement ensuring a smooth and safe drive experience.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><path d="M13,2.05V5.08C16.39,5.57 19,8.47 19,12C19,15.53 16.39,18.43 13,18.92V21.95C18.05,21.45 22,17.19 22,12C22,6.82 18.05,2.55 13,2.05M11,2.05C5.95,2.55 2,6.82 2,12C2,17.19 5.95,21.45 11,21.95V18.92C7.61,18.43 5,15.53 5,12C5,8.47 7.61,5.57 11,5.08V2.05Z" /></svg>
+                </div>
+                <h3 class="feature-title">Engine Check</h3>
+                <p class="feature-desc">Advanced diagnostics to identify and resolve complex engine issues, utilizing state-of-the-art tools.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4 class="footer-heading">About Us</h4>
+                <p class="footer-desc">AutoCare provides top-tier automotive repair and maintenance services, blending cutting-edge technology with expert craftsmanship to keep your vehicle in peak condition.</p>
+                <div class="footer-socials">
+                    <a href="mailto:contact@autocare.com" class="social-icon" aria-label="Email">&#9993;</a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">&#128247;</a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">&#128188;</a>
+                    <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub">&#128187;</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Important Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Address Location</h4>
+                <div class="footer-contact-info">
+                    <p>123 AutoCare Street<br>Tech City, TC 10012</p>
+                    <p>+1 (555) 123-4567</p>
+                    <p>contact@autocare.com</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Newsletter</h4>
+                <p class="footer-desc">Subscribe to our newsletter to receive the latest updates and special offers.</p>
+                <form action="#" method="POST" class="footer-newsletter">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AutoCare. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

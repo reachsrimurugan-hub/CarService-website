@@ -1,0 +1,114 @@
+/* ========================================================
+   About Us Section Module
+   ======================================================== */
+.about-section {
+    padding: 6rem 2rem;
+    background-color: #fff;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Left Division: Image */
+.about-image {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Right Division: Content */
+.about-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-subtitle {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.about-heading {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    color: var(--text-dark);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.about-separator {
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    border-radius: 2px;
+}
+
+.about-desc, .about-final-desc {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.about-list {
+    margin-bottom: 2rem;
+}
+
+.about-list li {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.about-list li::before {
+    content: "\2794"; /* Hex Unicode for rightwards arrow -> ➔ */
+    color: var(--primary-color);
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+.about-final-desc {
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .about-image {
+        height: 400px;
+    }
+    
+    .about-heading {
+        font-size: 2.2rem;
+    }
+}

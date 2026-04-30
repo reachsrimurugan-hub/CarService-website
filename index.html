@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AutoCare - We provide the best car services and cutting-edge automotive repair technology.">
+    <title>AutoCare - Best Car Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="features.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="testimonials.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation -->
+    <header class="navbar" id="home">
+        <div class="nav-container">
+            <!-- Left: Logo -->
+            <div class="logo">
+                <a href="#home">Auto<span>Care</span></a>
+            </div>
+
+            <!-- CSS Checkbox Hack for Mobile Menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Center: Navigation Links -->
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="drop-link">Pages <span>&#9662;</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Right: Search + Book Now -->
+            <div class="nav-right">
+                <button class="search-btn" aria-label="Search">&#128269;</button>
+                <a href="contact.html" class="btn-book-now">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="slider">
+            <!-- Radio inputs for manual sliding (Checking one will override auto-slide) -->
+            <input type="radio" name="hero-slider" id="slide-1">
+            <input type="radio" name="hero-slider" id="slide-2">
+
+            <!-- Slides Container with Keyframe animation for auto-slide -->
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide slide-bg-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h1>Great Technology <br> Best Services</h1>
+                        <p>Experience the modern era of automotive repair with our state-of-the-art facilities and
+                            certified professional mechanics.</p>
+                        <div class="slide-buttons">
+                            <a href="about.html" class="btn btn-primary">Our Industry</a>
+                            <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide slide-bg-2">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h1>We Provide Best <br> Car Services</h1>
+                        <p>Delivering premium quality and absolute trust for all your car detailing and maintenance
+                            needs.</p>
+                        <div class="slide-buttons">
+                            <a href="about.html" class="btn btn-primary">Our Industry</a>
+                            <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arrows for Slide 1 -->
+            <div class="nav-arrows nav-arrows-1">
+                <label for="slide-2" class="arrow left">&#10094;</label>
+                <label for="slide-2" class="arrow right">&#10095;</label>
+            </div>
+
+            <!-- Arrows for Slide 2 -->
+            <div class="nav-arrows nav-arrows-2">
+                <label for="slide-1" class="arrow left">&#10094;</label>
+                <label for="slide-1" class="arrow right">&#10095;</label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <h2 class="section-title">Features</h2>
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M19.14,12.94C19.2,12.63 19.25,12.32 19.25,12C19.25,11.68 19.2,11.37 19.14,11.06L21.5,9.22C21.71,9.05 21.77,8.76 21.65,8.53L19.4,4.63C19.27,4.4 19,4.32 18.78,4.4L16,5.5C15.42,5.06 14.78,4.7 14.1,4.42L13.68,1.45C13.63,1.19 13.41,1 13.15,1H8.85C8.59,1 8.37,1.19 8.32,1.45L7.89,4.42C7.22,4.7 6.58,5.06 6,5.5L3.22,4.4C3,4.32 2.73,4.4 2.6,4.63L0.35,8.53C0.23,8.76 0.29,9.05 0.5,9.22L2.86,11.06C2.8,11.37 2.75,11.68 2.75,12C2.75,12.32 2.8,12.63 2.86,12.94L0.5,14.78C0.29,14.95 0.23,15.24 0.35,15.47L2.6,19.37C2.73,19.6 3,19.68 3.22,19.6L6,18.5C6.58,18.94 7.22,19.3 7.89,19.58L8.32,22.55C8.37,22.81 8.59,23 8.85,23H13.15C13.41,23 13.63,22.81 13.68,22.55L14.1,19.58C14.78,19.3 15.42,18.94 16,18.5L18.78,19.6C19,19.68 19.27,19.6 19.4,19.37L21.65,15.47C21.77,15.24 21.71,14.95 21.5,14.78L19.14,12.94M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5Z" />
+                    </svg>
+                </div>
+                <h3 class="feature-title">Quality Materials</h3>
+                <p class="feature-desc">Using best-in-class components and the finest materials ensures a long lifespan
+                    for your vehicle parts.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12,16A3,3 0 0,1 9,13C9,11.88 10.31,9.71 12,7C13.69,9.71 15,11.88 15,13A3,3 0 0,1 12,16M12,3C12,3 5,10.04 5,13A7,7 0 0,0 12,20A7,7 0 0,0 19,13C19,10.04 12,3 12,3Z" />
+                    </svg>
+                </div>
+                <h3 class="feature-title">Oil Change</h3>
+                <p class="feature-desc">Keep your engine running smoothly with our rapid, high-quality synthetic oil
+                    change services.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,19.93C7.06,19.43 4,16.05 4,12C4,7.95 7.06,4.57 11,4.07V19.93M13,4.07C16.94,4.57 20,7.95 20,12C20,16.05 16.94,19.43 13,19.93V4.07Z" />
+                    </svg>
+                </div>
+                <h3 class="feature-title">Tire Service</h3>
+                <p class="feature-desc">Professional tire balancing, alignment and replacement ensuring a smooth and
+                    safe drive experience.</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M13,2.05V5.08C16.39,5.57 19,8.47 19,12C19,15.53 16.39,18.43 13,18.92V21.95C18.05,21.45 22,17.19 22,12C22,6.82 18.05,2.55 13,2.05M11,2.05C5.95,2.55 2,6.82 2,12C2,17.19 5.95,21.45 11,21.95V18.92C7.61,18.43 5,15.53 5,12C5,8.47 7.61,5.57 11,5.08V2.05Z" />
+                    </svg>
+                </div>
+                <h3 class="feature-title">Engine Check</h3>
+                <p class="feature-desc">Advanced diagnostics to identify and resolve complex engine issues, utilizing
+                    state-of-the-art tools.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <!-- Left Division: Image -->
+            <div class="about-image">
+                <!-- Utilizing the AI generated High-Res Vertical image -->
+                <img src="images/aboutus.png" alt="Professional Mechanic working in an advanced automotive workshop">
+            </div>
+
+            <!-- Right Division: Content -->
+            <div class="about-content">
+                <h4 class="about-subtitle">About Us</h4>
+                <h2 class="about-heading">Most Modern & Powerful <br> Industry in the World</h2>
+                <div class="about-separator"></div>
+
+                <p class="about-desc">
+                    AutoCare takes pride in delivering exceptional services by combining modern technology with the
+                    expertise of highly skilled mechanics. We maintain strict standards to ensure every vehicle receives
+                    premium care and attention.
+                </p>
+
+                <ul class="about-list">
+                    <li>High quality service</li>
+                    <li>Expert technicians</li>
+                    <li>Modern equipment</li>
+                    <li>Customer satisfaction</li>
+                </ul>
+
+                <p class="about-final-desc">
+                    Trust our experienced team to provide reliable solutions, bringing longevity and peak performance to
+                    your vehicle.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <!-- Section Header -->
+        <div class="services-header">
+            <h4 class="services-subtitle">Services</h4>
+            <h2 class="services-heading">The Best Services We Provide</h2>
+            <div class="services-separator"></div>
+        </div>
+
+        <!-- Layout Structure (Grid) -->
+        <div class="services-grid">
+
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/slide1.png" alt="Engine Diagnostic Service">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">&#9881;</div> <!-- Gear Unicode -->
+                    <div class="service-text">
+                        <h3 class="service-title">Engine Diagnostics</h3>
+                        <p class="service-desc">Complete scanning and resolution of complex engine issues.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/slide2.png" alt="Detailing Service">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">&#10024;</div> <!-- Sparkles Unicode -->
+                    <div class="service-text">
+                        <h3 class="service-title">Premium Detailing</h3>
+                        <p class="service-desc">Luxury auto detailing for interior and exterior components.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/service3.png" alt="General Maintenance">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">&#128295;</div> <!-- Wrench Unicode -->
+                    <div class="service-text">
+                        <h3 class="service-title">General Maintenance</h3>
+                        <p class="service-desc">Routine check-ups, tune-ups, and preventative vehicle care.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/service4.png" alt="Power & Energy">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">&#9889;</div> <!-- Lightning Unicode -->
+                    <div class="service-text">
+                        <h3 class="service-title">Power & Energy</h3>
+                        <p class="service-desc">Battery replacement, electrical systems, and power efficiency.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/service5.png" alt="Brake Services">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">&#128737;</div> <!-- Shield Tool Unicode -->
+                    <div class="service-text">
+                        <h3 class="service-title">Brake Services</h3>
+                        <p class="service-desc">Ensure complete safety with comprehensive brake inspections.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="images/service6.png" alt="Tire & Wheel">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">&#9901;</div> <!-- Wheel/Circle Unicode -->
+                    <div class="service-text">
+                        <h3 class="service-title">Tire Alignment</h3>
+                        <p class="service-desc">Professional wheel alignment and tire pressure calibration.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <!-- Left Division: Image -->
+            <div class="contact-image">
+                <!-- Reusing a vertical premium image for layout matching -->
+                <img src="images/slide2.png" alt="Contact Us - Professional Customer Service">
+            </div>
+
+            <!-- Right Division: Content & Form -->
+            <div class="contact-content">
+                <h4 class="contact-subtitle">Contact Us</h4>
+                <h2 class="contact-heading">You can contact us, if you have any query</h2>
+                <div class="contact-separator"></div>
+
+                <!-- HTML5 Native Validation Form -->
+                <!-- Action points nowhere as this is purely front-end UI testing -->
+                <form action="#" method="POST" class="contact-form">
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Full Name" required pattern="[A-Za-z ]+"
+                                title="Only alphabetic characters and spaces are allowed">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="tel" name="phone" placeholder="Phone Number (10 Digits)" required
+                            pattern="[0-9]{10}" title="Please enter exactly 10 digits">
+                    </div>
+
+                    <div class="input-group">
+                        <textarea name="message" placeholder="Write your query here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit-btn">Submit Now <span>&#10140;</span></button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <!-- Section Header -->
+        <div class="projects-header">
+            <h4 class="projects-subtitle">Projects</h4>
+            <h2 class="projects-heading">See Latest Projects For Our Client</h2>
+            <div class="projects-separator"></div>
+        </div>
+
+        <!-- Layout Structure (Grid) -->
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="images/enginerebuild.png" alt="Project 1">
+                    <div class="project-overlay">
+                        <div class="project-icon">&#8599;</div>
+                        <h3 class="project-title">Engine Rebuild</h3>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="images/slide2.png" alt="Project 2">
+                    <div class="project-overlay">
+                        <div class="project-icon">&#8599;</div>
+                        <h3 class="project-title">Custom Detailing</h3>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="images/turbo.png" alt="Project 3">
+                    <div class="project-overlay">
+                        <div class="project-icon">&#8599;</div>
+                        <h3 class="project-title">Turbo Upgrade</h3>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="images/modification.png" alt="Project 4">
+                    <div class="project-overlay">
+                        <div class="project-icon">&#8599;</div>
+                        <h3 class="project-title">Full Modification</h3>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="images/suspension.png" alt="Project 5">
+                    <div class="project-overlay">
+                        <div class="project-icon">&#8599;</div>
+                        <h3 class="project-title">Suspension Tuning</h3>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="testimonials-overlay"></div>
+        <div class="testimonials-container">
+            <div class="testimonials-separator"></div>
+
+            <div class="testimonials-slider">
+                <div class="testimonials-track">
+                    <div class="testimonial-slide">
+                        <img src="images/profile1.png" alt="John Doe" class="testimonial-profile">
+                        <h3 class="testimonial-name">John Doe</h3>
+                        <span class="testimonial-position">Senior Mechanic</span>
+                        <p class="testimonial-comment">"The attention to detail and professional service provided by
+                            AutoCare is unmatched. They fixed my engine issues quickly and efficiently. Highly
+                            recommended!"</p>
+                    </div>
+                    <div class="testimonial-slide">
+                        <img src="images/profile2.png" alt="Jane Smith" class="testimonial-profile">
+                        <h3 class="testimonial-name">Jane Smith</h3>
+                        <span class="testimonial-position">Fleet Manager</span>
+                        <p class="testimonial-comment">"We trust AutoCare with our entire fleet. Their proactive
+                            maintenance, transparent pricing, and excellent customer support ensure our vehicles are
+                            always on the road safely."</p>
+                    </div>
+                </div>
+                <div class="testimonials-dots-auto">
+                    <div class="dot-auto"></div>
+                    <div class="dot-auto"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Column 1: About Us -->
+            <div class="footer-col">
+                <h4 class="footer-heading">About Us</h4>
+                <p class="footer-desc">AutoCare provides top-tier automotive repair and maintenance services, blending
+                    cutting-edge technology with expert craftsmanship to keep your vehicle in peak condition.</p>
+                <div class="footer-socials">
+                    <a href="mailto:contact@autocare.com" class="social-icon" aria-label="Email">&#9993;</a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon"
+                        aria-label="Instagram">&#128247;</a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon"
+                        aria-label="LinkedIn">&#128188;</a>
+                    <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub">&#128187;</a>
+                </div>
+            </div>
+
+            <!-- Column 2: Important Links -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Important Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Address Location -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Address Location</h4>
+                <div class="footer-contact-info">
+                    <p>123 AutoCare Street<br>Tech City, TC 10012</p>
+                    <p>+1 (555) 123-4567</p>
+                    <p>contact@autocare.com</p>
+                </div>
+            </div>
+
+            <!-- Column 4: Newsletter -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Newsletter</h4>
+                <p class="footer-desc">Subscribe to our newsletter to receive the latest updates and special offers.</p>
+                <form action="#" method="POST" class="footer-newsletter">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AutoCare. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

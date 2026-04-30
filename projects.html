@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCare - Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <!-- Sticky Navigation -->
+    <header class="navbar" id="home">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Auto<span>Care</span></a>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <button class="search-btn" aria-label="Search">&#128269;</button>
+                <a href="contact.html" class="btn-book-now">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects" style="padding-top: 120px;">
+        <div class="projects-header">
+            <h4 class="projects-subtitle">Projects</h4>
+            <h2 class="projects-heading">See Latest Projects For Our Client</h2>
+            <div class="projects-separator"></div>
+        </div>
+        <div class="projects-grid">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="images/enginerebuild.png" alt="Project 1">
+                    <div class="project-overlay">
+                        <div class="project-icon">&#8599;</div>
+                        <h3 class="project-title">Engine Rebuild</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="images/slide2.png" alt="Project 2">
+                    <div class="project-overlay">
+                        <div class="project-icon">&#8599;</div>
+                        <h3 class="project-title">Custom Detailing</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="images/turbo.png" alt="Project 3">
+                    <div class="project-overlay">
+                        <div class="project-icon">&#8599;</div>
+                        <h3 class="project-title">Turbo Upgrade</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="images/modification.png" alt="Project 4">
+                    <div class="project-overlay">
+                        <div class="project-icon">&#8599;</div>
+                        <h3 class="project-title">Full Modification</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="images/suspension.png" alt="Project 5">
+                    <div class="project-overlay">
+                        <div class="project-icon">&#8599;</div>
+                        <h3 class="project-title">Suspension Tuning</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4 class="footer-heading">About Us</h4>
+                <p class="footer-desc">AutoCare provides top-tier automotive repair and maintenance services, blending cutting-edge technology with expert craftsmanship to keep your vehicle in peak condition.</p>
+                <div class="footer-socials">
+                    <a href="mailto:contact@autocare.com" class="social-icon" aria-label="Email">&#9993;</a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">&#128247;</a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">&#128188;</a>
+                    <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub">&#128187;</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Important Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Address Location</h4>
+                <div class="footer-contact-info">
+                    <p>123 AutoCare Street<br>Tech City, TC 10012</p>
+                    <p>+1 (555) 123-4567</p>
+                    <p>contact@autocare.com</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Newsletter</h4>
+                <p class="footer-desc">Subscribe to our newsletter to receive the latest updates and special offers.</p>
+                <form action="#" method="POST" class="footer-newsletter">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AutoCare. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
